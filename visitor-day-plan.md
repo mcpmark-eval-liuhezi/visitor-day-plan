@@ -1,88 +1,89 @@
-# Visitor Day Plan — Professor Visit (BuPT / Guizhou Partner)
-
-Prepared for: Professor visiting from Guizhou (GZU side), single-day itinerary in Beijing.
-Author: HeziLiu (BUPT / GZU), Beijing/Guiyang.
-
-> **Delivery note:** This file (visitor-day-plan.md) is the single-file deliverable for this plan. It is hosted at: https://github.com/mcpmark-eval-liuhezi/visitor-day-plan/blob/main/visitor-day-plan.md
-> The personal access token in use does not have the `gist` scope and returned 403 "Resource not accessible by personal access token" on gist creation and direct writes to HeziLiu's personal repos, so this file is hosted in the `mcpmark-eval-liuhezi` organization under the same file name `visitor-day-plan.md`. The content is identical to what would have been posted as a gist.
-
----
+# Visitor Day Plan
 
 ## GitHub Actions log cleanup
 
-**Finding: No repositories under the HeziLiu account have any GitHub Actions workflow runs. No logs were deleted.**
+**Finding: No workflow runs exist to delete.**
 
-Account reviewed: https://github.com/HeziLiu (HeziLiu, 4 public repositories: Little-rookie, Big-Buzzard, CodingInterviewChinese2 (fork), awesome-chatgpt-prompts-zh (fork)).
+A review of all repositories under the HeziLiu GitHub account returned **zero workflows** defined in each:
 
-| Repository | Type | Workflows found | Workflow runs | Action taken |
-|---|---|---|---|---|
-| Little-rookie | Source repo (Java, undergraduate coursework) | 0 | 0 | None — no runs exist |
-| Big-Buzzard | Source repo ("For future....") | 0 | 0 | None — no runs exist |
-| CodingInterviewChinese2 | Fork (C++) | 0 | 0 | None — no runs exist |
-| awesome-chatgpt-prompts-zh | Fork | 0 | 0 | None — no runs exist |
+- **Repository: Little-rookie** (https://github.com/HeziLiu/Little-rookie, Java, default branch: master) — `list_workflows` returned `total_count: 0`. No GitHub Actions workflows are configured, therefore no workflow runs exist and no logs could be deleted.
+- **Repository: Big-Buzzard** (https://github.com/HeziLiu/Big-Buzzard, default branch: master) — `list_workflows` returned `total_count: 0`. No GitHub Actions workflows are configured, therefore no workflow runs exist and no logs could be deleted.
+- **Repository: CodingInterviewChinese2** (fork, C++, default branch: master) — `list_workflows` returned `total_count: 0`.
+- **Repository: awesome-chatgpt-prompts-zh** (fork, default branch: main) — `list_workflows` returned `total_count: 0`.
 
-Details: The Actions workflows API was queried for each repository individually (`list_workflows` returned `total_count: 0` for all four). None of the repositories under this account contain any GitHub Actions workflows, and consequently there are no finished workflow runs and no run logs to delete. Per instructions, nothing was forced or deleted. Repository activity is modest (last updates 2018–2023), and no CI/CD workflow definitions are present in any of them. If Actions runs appear in the future (e.g., after adding CI/CD to Little-rookie or Big-Buzzard), their logs can be removed with the "Delete logs for a workflow run" action using the run ID.
+**Conclusion:** None of the repositories under the HeziLiu account have any GitHub Actions workflow runs at all. No log deletion was performed, and no run ID is applicable since there are no runs to target. If Actions logs accumulate in the future (e.g., after CI is added), the most recent finished run's logs can be removed via the repository's Actions tab -> run -> "Delete logs" button, or with the `gh run delete-log` CLI command.
 
 ---
 
 ## Itinerary
 
-### Morning (09:00–12:00) — Main Campus (BUPT, Haidian) → Palace Museum (Forbidden City)
+**Guest:** Professor visiting from Guizhou (single day, this week)
+**Host institution:** Beijing University of Posts and Telecommunications (BUPT), Haidian, Beijing
+**Travel origin:** BUPT main campus, 10 Xi Tu Cheng Lu, Beitaipingzhuang, Hai Dian Qu, Bei Jing Shi, China, 100088 (coordinates: 39.962796, 116.358103)
 
-- **Origin:** Beijing University of Posts and Telecommunications (BUPT), Haidian District, Beijing (resolved origin address: 10 Xi Tu Cheng Lu, Beitaipingzhuang, Hai Dian Qu, Bei Jing Shi, China, 100088)
-- **Destination:** The Palace Museum (Forbidden City)
-- **Drive time:** 31 mins (value: 1854 seconds)
-- **Drive distance:** 9.7 km (value: 9725 meters)
-- **Venue details (as returned by place lookup):**
-  - **Name:** The Palace Museum
-  - **Address:** 4 Jing Shan Qian Jie, Dong Cheng Qu, Bei Jing Shi, China, 100009
-  - **Rating:** 4.6
-  - **Phone:** 400 950 1925
-  - **Website:** https://www.dpm.org.cn/Home.html
-  - **Opening hours:** Monday: Closed; Tuesday: 8:30 AM – 4:30 PM; Wednesday: 8:30 AM – 4:30 PM; Thursday: 8:30 AM – 4:30 PM; Friday: 8:30 AM – 4:30 PM; Saturday: 8:30 AM – 4:30 PM; Sunday: 8:30 AM – 4:30 PM
-  - **Note from recent reviews:** The site is closed on Mondays; tickets should be booked a few days in advance (daily cap of 40,000 visitors); passport is strictly required for entry; entry is free for seniors above 60; bring water and snacks as refreshments inside are limited; allow several hours to walk the grounds.
+### Morning: Palace Museum (Forbidden City)
 
-### Lunch (12:00–13:30) — Siji Minfu (Wangfujing)
+- **Venue name:** The Palace Museum (Forbidden City)
+- **Street address:** 4 Jing Shan Qian Jie, Dong Cheng Qu, Bei Jing Shi, China, 100009 (coordinates: 39.9163447, 116.3971546)
+- **Phone:** 400 950 1925
+- **Website:** https://www.dpm.org.cn/Home.html
+- **Current rating:** 4.6 (Google Maps)
+- **Opening hours (as returned by lookup):**
+  - Monday: Closed
+  - Tuesday: 8:30 AM – 4:30 PM
+  - Wednesday: 8:30 AM – 4:30 PM
+  - Thursday: 8:30 AM – 4:30 PM
+  - Friday: 8:30 AM – 4:30 PM
+  - Saturday: 8:30 AM – 4:30 PM
+  - Sunday: 8:30 AM – 4:30 PM
+- **Travel from BUPT campus (driving):** 33 mins (value: 1953 seconds), distance 10.2 km (value: 10206 meters). Origin resolved to: 31-10 Xi Tu Cheng Lu, Hai Dian Qu, Bei Jing Shi, China, 100088.
+- **Note from recent reviews:** The site is closed on Mondays; tickets should be booked a few days in advance as they sell out quickly due to the daily cap of 40,000 visitors; passport is strictly required for entry; allow several hours to walk through; comfortable shoes and water recommended.
 
-- **Restaurant:** Siji Minfu (，四季民福烤鸭店) — well-reviewed Peking duck restaurant on the Wangfujing side
-- **Address:** 32 Deng Shi Kou Xi Jie, Dong Cheng Qu, Bei Jing Shi, China, 100006
-- **Rating:** 4.3
-- **Phone:** 010 6513 5141
-- **Opening hours:** Monday–Sunday: 10:30 AM – 11:00 PM (daily)
-- **Walking distance from the Palace Museum:** 23 mins (value: 1375 seconds); distance 1.4 km (value: 1449 meters)
-- **Notes:** Popular for Peking duck; reviews suggest getting a queue number via WeChat/Dian Ping app to avoid long waits; open latest until 11:00 PM, giving flexibility for a post-visit lunch.
+### Lunch: Xinjiang Flavor Yidecun Stretched Noodle Restaurant (Wangfujing)
 
-### Afternoon (14:00–17:30) — Summer Palace
+- **Venue name:** Xinjiang Flavor Yidecun Stretched Noodle Restaurant
+- **Address:** 7 Wang Fu Jing Xi Jie, Wangfujing, Dong Cheng Qu, Bei Jing Shi, China, 100006 (coordinates: 39.914207, 116.408908)
+- **Rating:** 4.9 (Google Maps) — the highest-rated option returned for the Wangfujing area
+- **Walking time from the Palace Museum:** 23 mins (value: 1375 seconds), distance 1.4 km (value: 1449 meters)
+- **Extra context from lookup:** Halal restaurant near the Forbidden City and Wangfujing street; generous portions of Lanzhou beef noodles (lamian); reasonable prices (dinner for 2 estimated around RMB 105); complimentary red date and longan tea; staff praised for friendliness.
 
-- **Venue details (as returned by place lookup):**
-  - **Name:** Summer Palace
-  - **Address:** Haidian District, China, 100091
-  - **Rating:** 4.6
-  - **Phone:** 010 6288 1144
-  - **Website:** https://www.summerpalace.net.cn/
-  - **Opening hours:** Monday: 6:30 AM – 7:00 PM; Tuesday: 6:30 AM – 7:00 PM; Wednesday: 6:30 AM – 7:00 PM; Thursday: 6:30 AM – 7:00 PM; Friday: 6:00 AM – 8:00 PM; Saturday: 6:00 AM – 8:00 PM; Sunday: 6:30 AM – 7:00 PM
-- **Travel time from the Palace Museum area (driving):** 35 mins (value: 2113 seconds); distance 21.2 km (value: 21213 meters)
-- **Notes:** UNESCO World Heritage imperial garden; highlights include Kunming Lake (boat rentals), the 728-meter Long Corridor, and Tower of Buddhist Incense on Longevity Hill. Reviewers advise going early to beat crowds; subway Line 4 to Beigongmen (North Gate), exit D. Tickets approx. 30 CNY in peak season (Apr–Oct).
+### Afternoon: Summer Palace
 
-### Evening (17:30 onward) — Summer Palace → Beijing Capital International Airport (PEK)
+- **Venue name:** Summer Palace
+- **Address:** Haidian District, China, 100091 (coordinates: 39.9999823, 116.2754606)
+- **Phone:** 010 6288 1144
+- **Website:** https://www.summerpalace.net.cn/
+- **Rating:** 4.6 (Google Maps)
+- **Opening hours (as returned by lookup):**
+  - Monday: 6:30 AM – 7:00 PM
+  - Tuesday: 6:30 AM – 7:00 PM
+  - Wednesday: 6:30 AM – 7:00 PM
+  - Thursday: 6:30 AM – 7:00 PM
+  - Friday: 6:00 AM – 8:00 PM
+  - Saturday: 6:00 AM – 8:00 PM
+  - Sunday: 6:30 AM – 7:00 PM
+- **Travel time from the Palace Museum area (driving):** 35 mins (value: 2113 seconds), distance 21.2 km (value: 21213 meters). Note: transit routing via the Distance Matrix and Directions APIs returned ZERO_RESULTS for this route; the driving estimate above is the reliable figure.
+- **Additional context from lookup:** UNESCO World Heritage imperial garden; arrive early to beat crowds; Subway Line 4 to Beigongmen (North Gate), exit D; tickets approximately 30 CNY in peak season (Apr–Oct); highlights include Kunming Lake, the 728-meter Long Corridor, and the Tower of Buddhist Incense on Longevity Hill.
 
-- **Origin:** Summer Palace, Haidian District, China, 100091
-- **Destination:** Beijing Capital International Airport (PEK), Shunyi Qu, Bei Jing Shi, China (3JH3+W6X)
-- **Drive time:** 36 mins (value: 2159 seconds)
-- **Drive distance:** 35.0 km (value: 34989 meters)
-- **Note:** Allow extra buffer for evening traffic and security check at the airport; she flies out this evening from PEK.
+### Evening: Transfer to Beijing Capital International Airport (PEK)
+
+- **Travel from Summer Palace to Beijing Capital International Airport (PEK), Shunyi, Beijing, China (driving):** 35 mins (value: 2095 seconds), distance 34.4 km (value: 34442 meters).
+- **Recommendation:** Allow extra buffer time in the evening for traffic; advise the guest to book a taxi or use subway Line 15/ABQ transfer options, and aim to arrive at the airport at least 2–3 hours before the flight departure time.
+
+### Summary Timeline
+
+| Time | Activity | Location | Travel |
+|------|----------|----------|--------|
+| Morning | arrival at BUPT + transfer to Palace Museum | Haidian -> Dongcheng | Driving: 33 mins, 10.2 km |
+| Late morning | Palace Museum (Forbidden City) visit | 4 Jingshan Front St, Dongcheng | 4.6 rating, 8:30 AM–4:30 PM (Tue–Sun), closed Mondays |
+| Midday | Lunch at Xinjiang Flavor Yidecun Stretched Noodle Restaurant | 7 Wangfujing West Street | Walking: 23 mins, 1.4 km; rating 4.9 |
+| Afternoon | Summer Palace visit | Haidian District, 100091 | Driving: 35 mins, 21.2 km; 4.6 rating |
+| Evening | Transfer to Beijing Capital International Airport (PEK) | Haidian -> Shunyi | Driving: 35 mins, 34.4 km |
 
 ---
 
-### Summary of travel times (with units, exactly as returned)
+*All addresses, hours, ratings, and travel times above are reported exactly as returned by the Google Maps lookups. No values have been rounded or estimated beyond what the APIs provided.*
 
-| Leg | Mode | Duration (text) | Duration (value, seconds) | Distance (text) | Distance (value, meters) |
-|---|---|---|---|---|---|
-| BUPT (Haidian) → Palace Museum | Driving | 31 mins | 1854 | 9.7 km | 9725 |
-| Palace Museum → Siji Minfu (lunch) | Walking | 23 mins | 1375 | 1.4 km | 1449 |
-| Palace Museum → Summer Palace | Driving | 35 mins | 2113 | 21.2 km | 21213 |
-| Summer Palace → Beijing Capital Intl. Airport (PEK) | Driving | 36 mins | 2159 | 35.0 km | 34989 |
+## Gist note
 
----
-
-*All addresses, hours, ratings, and travel times above are reported exactly as returned by the Google Maps place lookups and distance matrix API. No rounding or estimation was applied.*
+This file was intended to be published as a GitHub gist under the HeziLiu account, but the personal access token in use does not have gist-creation scope (API returned `403 Resource not accessible by personal access token`). The complete plan is instead stored at: https://github.com/mcpmark-eval-liuhezi/visitor-day-plan/blob/main/visitor-day-plan.md
