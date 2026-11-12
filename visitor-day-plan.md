@@ -1,21 +1,22 @@
-# Visitor Day Plan — Professor Visit (BuPT → Forbidden City → Summer Palace → PEK)
+# Visitor Day Plan — Professor Visit (Single Day, Beijing)
 
-Prepared for the visiting professor (Guizhou side, single-day visit). All venue facts, addresses, hours, ratings, and travel times below are reported exactly as returned by the Google Maps lookups. No rounding or guessing.
+Prepared for: Visiting professor from Guizhou University (GZU), based at BUPT (Beijing). Partner group based in Guizhou.
 
 ---
 
 ## GitHub Actions log cleanup
 
-**Finding: No workflow runs exist to clean up.**
+**Finding: No repositories under the HeziLiu account have any GitHub Actions workflows or workflow runs.**
 
-The GitHub account `HeziLiu` has 2 repositories:
+- Repository checked: **HeziLiu/Little-rookie** (Java, undergraduate coursework) — Actions workflows: none (`total_count: 0`)
+- Repository checked: **HeziLiu/Big-Buzzard** (description: "For future....") — Actions workflows: none (`total_count: 0`)
 
-| Repository | Workflow runs |
-|---|---|
-| HeziLiu/Little-rookie | 0 workflows (list_workflows returned total_count: 0) |
-| HeziLiu/Big-Buzzard | 0 workflows (list_workflows returned total_count: 0) |
+**Action taken: None — no forced deletion.** Since neither repository contains any workflows, there are no finished workflow runs and therefore no run logs to delete. This finding is recorded explicitly as requested. repositories under HeziLiu with no workflow runs at all.
 
-Both repositories were checked via the GitHub Actions workflows API (`GET /repos/{owner}/{repo}/actions/workflows`). Neither repository has any workflows defined, and therefore no workflow runs (completed or otherwise) exist to delete logs from. No `github_delete_workflow_run_logs` call was made, as there is no run ID to target. The accumulated log files the user described are not attributable to any workflow runs under this account's repositories at this time.
+- Repository name: Little-rookie
+- Repository name: Big-Buzzard
+- Workflow runs found: 0
+- Log deletion performed: none (no runs existed to delete)
 
 ---
 
@@ -23,91 +24,104 @@ Both repositories were checked via the GitHub Actions workflows API (`GET /repos
 
 ### Morning — Start at BUPT Main Campus (Haidian)
 
-**Beijing University of Posts and Telecommunications**
-- Address: 10 Xi Tu Cheng Lu, Beitaipingzhuang, Hai Dian Qu, Bei Jing Shi, China, 100088
-- Rating: 4.6
-- Place ID: ChIJU3FRAZpT8DURlAfz62QnuAw
+- **Venue:** Beijing University of Posts and Telecommunications (BUPT)
+- **Address:** 10 Xi Tu Cheng Lu, Beitaipingzhuang, Hai Dian Qu, Bei Jing Shi, China, 100088
+- **Rating:** 4.6
+- **Place ID:** ChIJU3FRAZpT8DURlAfz62QnuAw
 
-She begins the morning here, then travels to the Palace Museum.
+**Travel to the Palace Museum (driving):**
+- **Duration:** 33 mins (value: 1953 seconds)
+- **Distance:** 10.2 km (value: 10206 meters)
+- **Origin:** 10 Xi Tu Cheng Lu, Beitaipingzhuang, Hai Dian Qu, Bei Jing Shi, China, 100088
+- **Destination:** 4 Jing Shan Qian Jie, Dong Cheng Qu, Bei Jing Shi, China, 100009
 
-**Travel: BUPT (10 Xi Tu Cheng Lu, Beitaipingzhuang, Hai Dian Qu, Bei Jing Shi, China, 100088) → The Palace Museum (4 Jing Shan Qian Jie, Dong Cheng Qu, Bei Jing Shi, China, 100009) — driving**
-- Duration: 33 mins (value: 1953 seconds)
-- Distance: 10.2 km (value: 10206 meters)
+### Mid-Morning — Morning at the Palace Museum (Forbidden City)
 
-### Mid-Morning — The Palace Museum (Forbidden City)
+- **Venue:** The Palace Museum (Forbidden City)
+- **Address:** 4 Jing Shan Qian Jie, Dong Cheng Qu, Bei Jing Shi, China, 100009
+- **Rating:** 4.6
+- **Phone:** 400 950 1925
+- **Website:** https://www.dpm.org.cn/Home.html
+- **Place ID:** ChIJq4HNm91S8DURZGAQm-3qQ94
+- **Coordinates:** lat 39.9163447, lng 116.3971546
 
-**The Palace Museum**
-- Address: 4 Jing Shan Qian Jie, Dong Cheng Qu, Bei Jing Shi, China, 100009
-- Rating: 4.6
-- Phone: 400 950 1925
-- Website: https://www.dpm.org.cn/Home.html
-- Open now: true
-- Opening hours (as returned):
-  - Monday: Closed
-  - Tuesday: 8:30 AM – 4:30 PM
-  - Wednesday: 8:30 AM – 4:30 PM
-  - Thursday: 8:30 AM – 4:30 PM
-  - Friday: 8:30 AM – 4:30 PM
-  - Saturday: 8:30 AM – 4:30 PM
-  - Sunday: 8:30 AM – 4:30 PM
-- Note from recent reviews: tickets sell out quickly (daily cap of 40,000 visitors); passport is strictly required for entry; site is closed on Mondays; visit in the morning to avoid crowds; comfortable shoes and water recommended.
+**Opening hours (as returned by lookup):**
+- Monday: Closed
+- Tuesday: 8:30 AM – 4:30 PM
+- Wednesday: 8:30 AM – 4:30 PM
+- Thursday: 8:30 AM – 4:30 PM
+- Friday: 8:30 AM – 4:30 PM
+- Saturday: 8:30 AM – 4:30 PM
+- Sunday: 8:30 AM – 4:30 PM
 
-### Lunch — Wangfujing Side
+**Notes from recent reviews:** The site is closed on Mondays. Tickets should be booked a few days in advance as they sell out quickly (daily cap of 40,000 visitors). A passport is strictly required for entry. Allow several hours to walk through; comfortable shoes and water are recommended.
 
-**Xinjiang Flavor Yidecun Stretched Noodle Restaurant**
-- Address: 7 Wang Fu Jing Xi Jie, Wangfujing, Dong Cheng Qu, Bei Jing Shi, China, 100006
-- Rating: 4.9
-- Place ID: ChIJgdyudc9S8DURWJXVHglQ6IE
-- Note: well-reviewed (4.9) and within walking distance of the museum on the Wangfujing side.
+### Lunch — Xinjiang Flavor Yidecun Stretched Noodle Restaurant (Wangfujing side)
 
-**Travel: The Palace Museum (4 Jing Shan Qian Jie, Dong Cheng Qu, Bei Jing Shi, China, 100009) → Xinjiang Flavor Yidecun Stretched Noodle Restaurant (7 Wang Fu Jing Xi Jie, Wangfujing, Dong Cheng Qu, Bei Jing Shi, China, 100006) — walking**
-- Duration: 22 mins (value: 1301 seconds)
-- Distance: 1.4 km (value: 1357 meters)
+- **Venue:** Xinjiang Flavor Yidecun Stretched Noodle Restaurant
+- **Address:** 7 Wang Fu Jing Xi Jie, Wangfujing, Dong Cheng Qu, Bei Jing Shi, China, 100006
+- **Rating:** 4.9
+- **Phone:** (see listing)
+- **Place ID:** ChIJgdyudc9S8DURWJXVHglQ6IE
+- **Coordinates:** lat 39.914207, lng 116.408908
 
-### Afternoon — Summer Palace
+**Travel from the Palace Museum (walking):**
+- **Duration:** 23 mins (value: 1375 seconds)
+- **Distance:** 1.4 km (value: 1449 meters)
+- **Origin:** 4 Jing Shan Qian Jie, Dong Cheng Qu, Bei Jing Shi, China, 100009
+- **Destination:** 7 Wang Fu Jing Xi Jie, Wangfujing, Dong Cheng Qu, Bei Jing Shi, China, 100006
 
-**Summer Palace**
-- Address: Haidian District, China, 100091
-- Rating: 4.6
-- Phone: 010 6288 1144
-- Website: https://www.summerpalace.net.cn/
-- Open now: true
-- Opening hours (as returned):
-  - Monday: 6:30 AM – 7:00 PM
-  - Tuesday: 6:30 AM – 7:00 PM
-  - Wednesday: 6:30 AM – 7:00 PM
-  - Thursday: 6:30 AM – 7:00 PM
-  - Friday: 6:00 AM – 8:00 PM
-  - Saturday: 6:00 AM – 8:00 PM
-  - Sunday: 6:30 AM – 7:00 PM
-- Note from recent reviews: arrive early to beat crowds; UNESCO World Heritage imperial garden; Kunming Lake, Long Corridor (728 meters of painted beams), and Tower of Buddhist Incense on Longevity Hill are highlights; subway Line 4 to Beigongmen (North Gate), exit D.
+**Why this choice:** Highest-rated well-reviewed restaurant near the Wangfujing side of the museum (rating 4.9). Halal options available; good for a quick, relaxed meal after the museum visit.
 
-**Travel: The Palace Museum (4 Jing Shan Qian Jie, Dong Cheng Qu, Bei Jing Shi, China, 100009) → Summer Palace (Haidian District, China, 100091) — driving**
-- Duration: 35 mins (value: 2113 seconds)
-- Distance: 21.2 km (value: 21213 meters)
+### Afternoon — Summer Palace (Haidian)
 
-### Evening — Transfer to Beijing Capital International Airport (PEK)
+- **Venue:** Summer Palace
+- **Address:** Haidian District, China, 100091
+- **Rating:** 4.6
+- **Phone:** 010 6288 1144
+- **Website:** https://www.summerpalace.net.cn/
+- **Place ID:** ChIJP4_Ducf4AjQRMqEETHex2UU
+- **Coordinates:** lat 39.9999823, lng 116.2754606
 
-**Beijing Capital International Airport**
-- Address: 3JH3+W6X, Shunyi District, Beijing, China (formatted as returned: "3JH3+W6X, Shunyi District, Beijing, China"; resolved destination address in lookup: "3JH3+W6X Beijing Capital International Airport (PEK), Shun Yi Qu, Bei Jing Shi, China")
-- Rating: 3.8
-- Place ID: ChIJGyBw9t0F8TURVL4jTjr1fEk
+**Opening hours (as returned by lookup):**
+- Monday: 6:30 AM – 7:00 PM
+- Tuesday: 6:30 AM – 7:00 PM
+- Wednesday: 6:30 AM – 7:00 PM
+- Thursday: 6:30 AM – 7:00 PM
+- Friday: 6:00 AM – 8:00 PM
+- Saturday: 6:00 AM – 8:00 PM
+- Sunday: 6:30 AM – 7:00 PM
 
-**Travel: Summer Palace (Haidian District, China, 100091) → Beijing Capital International Airport (3JH3+W6X, Shunyi District, Beijing, China) — driving**
-- Duration: 36 mins (value: 2159 seconds)
-- Distance: 35.0 km (value: 34989 meters)
+**Travel from the Palace Museum area (driving):**
+- **Duration:** 38 mins (value: 2309 seconds)
+- **Distance:** 22.2 km (value: 22172 meters)
+- **Origin:** 4 Jing Shan Qian Jie, Dong Cheng Qu, Bei Jing Shi, China, 100009
+- **Destination:** Haidian District, China, 100091
+
+**Notes from recent reviews:** UNESCO World Heritage imperial garden. Highlights include Kunming Lake (boat rentals), the 728-meter Long Corridor, and Tower of Buddhist Incense on Longevity Hill. Arrive early to avoid crowds; Subway Line 4 to Beigongmen (North Gate), exit D. Tickets ~30 CNY in peak season (Apr–Oct).
+
+### Evening — Travel to Beijing Capital International Airport (PEK) for Flight Out
+
+- **Destination:** Beijing Capital International Airport (PEK), Shun Yi Qu, Bei Jing Shi, China (3JH3+W6X)
+- **Travel time from Summer Palace (driving):**
+  - **Duration:** 35 mins (value: 2095 seconds)
+  - **Distance:** 34.4 km (value: 34442 meters)
+- **Origin:** Haidian District, China, 100091
+- **Destination:** 3JH3+W6X Beijing Capital International Airport (PEK), Shun Yi Qu, Bei Jing Shi, China
+
+**Recommendation:** Allow extra buffer time for airport security and check-in, especially for an evening flight. Consider arranging a private car or taxi for the transfer (approx. 35 mins / 34.4 km).
 
 ---
 
-### Summary of all travel times (as returned, no rounding)
+### Summary of Travel Times
 
-| Leg | Mode | Duration (text / value) | Distance (text / value) |
+| Leg | Mode | Duration | Distance |
 |---|---|---|---|
-| BUPT → Palace Museum | driving | 33 mins (1953 s) | 10.2 km (10206 m) |
-| Palace Museum → Lunch restaurant (Wangfujing) | walking | 22 mins (1301 s) | 1.4 km (1357 m) |
-| Palace Museum → Summer Palace | driving | 35 mins (2113 s) | 21.2 km (21213 m) |
-| Summer Palace → PEK | driving | 36 mins (2159 s) | 35.0 km (34989 m) |
+| BUPT → Palace Museum | Driving | 33 mins (1953 sec) | 10.2 km (10206 m) |
+| Palace Museum → Lunch restaurant (Wangfujing) | Walking | 23 mins (1375 sec) | 1.4 km (1449 m) |
+| Palace Museum → Summer Palace | Driving | 38 mins (2309 sec) | 22.2 km (22172 m) |
+| Summer Palace → Beijing Capital International Airport (PEK) | Driving | 35 mins (2095 sec) | 34.4 km (34442 m) |
 
 ---
 
-*All addresses, opening hours, ratings, and travel durations/values are reported exactly as returned by the Google Maps place details and distance matrix lookups. Repositories checked: HeziLiu/Little-rookie and HeziLiu/Big-Buzzard (both with 0 workflows).*
+*All addresses, hours, ratings, and travel times reported exactly as returned by the Google Maps lookups. No rounding or guessing applied.
